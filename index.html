@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Trabaja con nosotros</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empresa | Empleo</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 15px;
-      width: 350px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
+header {
+  padding:60px 20px;
+  text-align:center;
+  background:#111827;
+}
 
-    input, button {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: none;
-    }
+header h1 {
+  font-size:42px;
+  margin-bottom:10px;
+}
 
-    input {
-      background: #334155;
-      color: white;
-    }
+section {
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
 
-    button {
-      background: #3b82f6;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap:20px;
+}
 
-    button:hover {
-      background: #2563eb;
-    }
-  </style>
+.card {
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
+}
+
+.form-box {
+  background:#111827;
+  padding:25px;
+  border-radius:12px;
+  max-width:400px;
+  margin:auto;
+}
+
+input, button {
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border:none;
+  border-radius:8px;
+}
+
+input {
+  background:#334155;
+  color:white;
+}
+
+button {
+  background:#3b82f6;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+footer {
+  text-align:center;
+  padding:30px;
+  opacity:0.7;
+}
+a {color:#60a5fa;}
+</style>
+
 </head>
 
 <body>
 
-  <div class="card">
-    <h1>Únete a nosotros</h1>
-    <p>Envíanos tu CV</p>
+<header>
+  <h1>Organización MCdonals Benito Sagredo</h1>
+  <p>Buscamos talento para nuestro equipo</p>
+</header>
+
+<section>
+  <h2>Quiénes somos</h2>
+  <p>Somos una empresa enfocada en crecimiento, innovación y desarrollo de talento. Buscamos personas motivadas para unirse a nuestro equipo.</p>
+</section>
+
+<section>
+  <h2>Lo que ofrecemos</h2>
+
+  <div class="grid">
+    <div class="card">💼 Crecimiento profesional</div>
+    <div class="card">📈 Aprendizaje continuo</div>
+    <div class="card">🌍 Buen ambiente</div>
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center;">Envíanos tu CV</h2>
+
+  <div class="form-box">
 
     <form action="https://formsubmit.co/gerenteoficina.benitosagredo@es.mcd.com" method="POST" enctype="multipart/form-data">
 
@@ -67,10 +117,13 @@
 
       <input type="hidden" name="_captcha" value="false">
     </form>
+
   </div>
-<footer style="margin-top:30px; text-align:center; color:white;">
-  <a href="terminos.html" style="color:white;">Términos y condiciones</a>
+</section>
+
+<footer>
+  <a href="terminos.html">Términos y condiciones</a>
 </footer>
+
 </body>
 </html>
-
